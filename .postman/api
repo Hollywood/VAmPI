@@ -1,0 +1,17 @@
+id = dbe3666b-fc93-45f9-971a-37e04642ee8b
+
+[relations]
+
+[relations.collections]
+rootDirectory = postman/collections
+files[] = {"id":"7dfc8dad-88f1-48dc-8ac4-da4b7a077525","path":"VAmPI.json","metaData":{}}
+
+[relations.collections.metaData]
+
+[relations.apiDefinition]
+rootDirectory = openapi_specs
+files[] = {"path":"openapi3.yml","metaData":{}}
+files[] = {"path":"VAmPI.postman_collection.json","metaData":{}}
+
+[relations.apiDefinition.metaData]
+type = openapi:3

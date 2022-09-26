@@ -1,6 +1,6 @@
 openapi: 2.0.0
 info:
-  title: VAmPI-TestYian
+  title: VAmPI-TestYian2
   description: OpenAPI v2 specs for VAmPI
   version: '0.1'
 servers:

@@ -4,7 +4,7 @@ info:
   description: OpenAPI v3 specs for VAmPI
   version: '0.1'
 servers:
-  - url: http://localhost:5000
+  - url: https://ccf66bfd-462b-42d0-a572-f22bcca8eab0.mock.pstmn.io
 components: {}
 paths:
   /createdb:

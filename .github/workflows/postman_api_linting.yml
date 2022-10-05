@@ -24,6 +24,6 @@ jobs:
           GITHUB_WORKSPACE: ${{ github.workspace }}
           GITHUB_RUN_ID: ${{ github.run_id }}
         run: |
-          postman collection run "${GITHUB_WORKSPACE}/postman/collections/VAmPI.json"
+          postman collection run "7dfc8dad-88f1-48dc-8ac4-da4b7a077525"
           # Run your API using Postman CLI
           postman api lint

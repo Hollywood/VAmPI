@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "7dfc8dad-88f1-48dc-8ac4-da4b7a077525",
+		"_postman_id": "2bbd0283-76e4-4e93-9e10-2a6fc6c62732",
 		"name": "VAmPI",
 		"description": "OpenAPI v3 specs for VAmPI",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "23356961-7dfc8dad-88f1-48dc-8ac4-da4b7a077525"
+		"_uid": "22824988-2bbd0283-76e4-4e93-9e10-2a6fc6c62732"
 	},
 	"item": [
 		{
@@ -15,7 +15,7 @@
 					"item": [
 						{
 							"name": "Retrieves user by username",
-							"id": "fb15b09d-c672-49b8-a4ca-95889cf658dd",
+							"id": "99a8e8c2-0a1b-437b-a617-e270b5d9d4d9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -39,7 +39,6 @@
 									],
 									"variable": [
 										{
-											"id": "296e0c0f-e1a2-4585-923a-1f842c1391a1",
 											"key": "username",
 											"value": "<string>",
 											"description": "(Required) retrieve username data"
@@ -50,7 +49,7 @@
 							},
 							"response": [
 								{
-									"id": "98f382a8-4abc-4030-bac1-cb53f16621cc",
+									"id": "36cad5a6-428b-421e-9a03-083600d4f79e",
 									"name": "Successfully display user info",
 									"originalRequest": {
 										"method": "GET",
@@ -72,7 +71,6 @@
 											],
 											"variable": [
 												{
-													"id": "296e0c0f-e1a2-4585-923a-1f842c1391a1",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) retrieve username data"
@@ -84,6 +82,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -94,7 +93,7 @@
 									"body": "[\n  {\n    \"username\": \"culpa\",\n    \"email\": \"dolor culpa ullamco \"\n  },\n  {\n    \"username\": \"pariatur cupidatat incididunt\",\n    \"email\": \"pariatur fugiat veniam\"\n  }\n]"
 								},
 								{
-									"id": "8864c5ca-c221-4fb6-ac6f-05fce6119e69",
+									"id": "6365a8cb-f357-4565-a87e-4f51529e2ee9",
 									"name": "User not found",
 									"originalRequest": {
 										"method": "GET",
@@ -116,7 +115,6 @@
 											],
 											"variable": [
 												{
-													"id": "296e0c0f-e1a2-4585-923a-1f842c1391a1",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) retrieve username data"
@@ -128,6 +126,7 @@
 									"status": "Not Found",
 									"code": 404,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -141,7 +140,7 @@
 						},
 						{
 							"name": "Deletes user by username (Only Admins)",
-							"id": "bfc63d1b-4472-4f2c-813b-b621d383b966",
+							"id": "316f8903-d1ab-4e75-bead-aac2855a37c2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -165,7 +164,6 @@
 									],
 									"variable": [
 										{
-											"id": "9942f565-8446-4d47-9ac3-877012614050",
 											"key": "username",
 											"value": "<string>",
 											"description": "(Required) Delete username"
@@ -176,7 +174,7 @@
 							},
 							"response": [
 								{
-									"id": "283eca90-94be-4b3a-81f1-1743a1d7e11c",
+									"id": "b05b2b61-c2de-472c-ac23-9cd14fec392e",
 									"name": "Sucessfully deleted user",
 									"originalRequest": {
 										"method": "DELETE",
@@ -198,7 +196,6 @@
 											],
 											"variable": [
 												{
-													"id": "9942f565-8446-4d47-9ac3-877012614050",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) Delete username"
@@ -210,6 +207,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -220,7 +218,7 @@
 									"body": "{\n  \"message\": \"occaecat Ut velit \",\n  \"status\": \"success\"\n}"
 								},
 								{
-									"id": "8c011386-c780-4a4b-ace6-5b6d34f8522a",
+									"id": "8cc59c51-e607-4327-90dd-555399f238ee",
 									"name": "User not authorized",
 									"originalRequest": {
 										"method": "DELETE",
@@ -242,7 +240,6 @@
 											],
 											"variable": [
 												{
-													"id": "9942f565-8446-4d47-9ac3-877012614050",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) Delete username"
@@ -254,6 +251,7 @@
 									"status": "Unauthorized",
 									"code": 401,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -264,7 +262,7 @@
 									"body": "{\n  \"status\": \"fail\",\n  \"message\": \"dolore\"\n}"
 								},
 								{
-									"id": "b0712f4f-0ed5-4684-97e9-b0f46e778803",
+									"id": "acc7cec0-0770-4016-ace6-61fcc6d2372c",
 									"name": "User not found",
 									"originalRequest": {
 										"method": "DELETE",
@@ -286,7 +284,6 @@
 											],
 											"variable": [
 												{
-													"id": "9942f565-8446-4d47-9ac3-877012614050",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) Delete username"
@@ -298,6 +295,7 @@
 									"status": "Not Found",
 									"code": 404,
 									"_postman_previewlanguage": "text",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -311,7 +309,7 @@
 						},
 						{
 							"name": "Update users email",
-							"id": "0823a215-9289-4273-ab20-75856af14fdb",
+							"id": "89173043-dd93-4573-9546-a24638dcc099",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -349,7 +347,6 @@
 									],
 									"variable": [
 										{
-											"id": "9c428dc0-fbd9-4d02-b4c3-29b063a3c39b",
 											"key": "username",
 											"value": "<string>",
 											"description": "(Required) username to update email"
@@ -360,7 +357,7 @@
 							},
 							"response": [
 								{
-									"id": "76a19b65-6a0d-432b-97d1-532503d8016c",
+									"id": "7613a325-1465-43f2-838e-8e9d26750992",
 									"name": "Sucessfully updated user email",
 									"originalRequest": {
 										"method": "PUT",
@@ -396,7 +393,6 @@
 											],
 											"variable": [
 												{
-													"id": "9c428dc0-fbd9-4d02-b4c3-29b063a3c39b",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) username to update email"
@@ -408,6 +404,7 @@
 									"status": "No Content",
 									"code": 204,
 									"_postman_previewlanguage": "text",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -418,7 +415,7 @@
 									"body": ""
 								},
 								{
-									"id": "32d9727f-6eef-4b3d-a2ba-f120a6c5b7f6",
+									"id": "97b9d727-3b7f-43e8-ac81-31974f4ef7cb",
 									"name": "Invalid request",
 									"originalRequest": {
 										"method": "PUT",
@@ -454,7 +451,6 @@
 											],
 											"variable": [
 												{
-													"id": "9c428dc0-fbd9-4d02-b4c3-29b063a3c39b",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) username to update email"
@@ -466,6 +462,7 @@
 									"status": "Bad Request",
 									"code": 400,
 									"_postman_previewlanguage": "text",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -476,7 +473,7 @@
 									"body": ""
 								},
 								{
-									"id": "5bb97f11-f4fb-4fad-917b-a94ef7d9f620",
+									"id": "b64c462f-4102-4a0b-b05c-2c596b2da150",
 									"name": "User not authorized",
 									"originalRequest": {
 										"method": "PUT",
@@ -512,7 +509,6 @@
 											],
 											"variable": [
 												{
-													"id": "9c428dc0-fbd9-4d02-b4c3-29b063a3c39b",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) username to update email"
@@ -524,6 +520,7 @@
 									"status": "Unauthorized",
 									"code": 401,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -537,7 +534,7 @@
 						},
 						{
 							"name": "Update users password",
-							"id": "16c9d1eb-4686-4602-a4da-7b8763df2dd8",
+							"id": "ff7817c1-5e5b-467f-9b1f-7e7c291631e7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -575,7 +572,6 @@
 									],
 									"variable": [
 										{
-											"id": "a84a03a0-f527-4caf-b2ca-c23f7014b6c0",
 											"key": "username",
 											"value": "<string>",
 											"description": "(Required) username to update password"
@@ -586,7 +582,7 @@
 							},
 							"response": [
 								{
-									"id": "24f330bd-9346-42fb-aa1a-8188c088ecca",
+									"id": "c2c486ae-7e72-49ad-8201-0ff920bb9dd3",
 									"name": "Sucessfully updated users password",
 									"originalRequest": {
 										"method": "PUT",
@@ -622,7 +618,6 @@
 											],
 											"variable": [
 												{
-													"id": "a84a03a0-f527-4caf-b2ca-c23f7014b6c0",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) username to update password"
@@ -634,6 +629,7 @@
 									"status": "No Content",
 									"code": 204,
 									"_postman_previewlanguage": "text",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -644,7 +640,7 @@
 									"body": ""
 								},
 								{
-									"id": "75ad52a7-5c0a-4709-8758-d1b617c83af4",
+									"id": "b36341a7-4a69-47bb-819d-28142043b656",
 									"name": "Invalid request",
 									"originalRequest": {
 										"method": "PUT",
@@ -680,7 +676,6 @@
 											],
 											"variable": [
 												{
-													"id": "a84a03a0-f527-4caf-b2ca-c23f7014b6c0",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) username to update password"
@@ -692,6 +687,7 @@
 									"status": "Bad Request",
 									"code": 400,
 									"_postman_previewlanguage": "text",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -702,7 +698,7 @@
 									"body": ""
 								},
 								{
-									"id": "88b715c9-5671-4cee-a706-6e4164175cc0",
+									"id": "d5401f71-d2cc-472c-82ef-61740606ebfd",
 									"name": "User not authorized",
 									"originalRequest": {
 										"method": "PUT",
@@ -738,7 +734,6 @@
 											],
 											"variable": [
 												{
-													"id": "a84a03a0-f527-4caf-b2ca-c23f7014b6c0",
 													"key": "username",
 													"value": "<string>",
 													"description": "(Required) username to update password"
@@ -750,6 +745,7 @@
 									"status": "Unauthorized",
 									"code": 401,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -762,11 +758,11 @@
 							]
 						}
 					],
-					"id": "57dc4e56-d12c-4672-ab70-842db6fb95cb"
+					"id": "0ad7cbb4-5c84-4aae-b49f-c1886106650a"
 				},
 				{
 					"name": "Retrieves all users",
-					"id": "1e46c5df-3efc-4fc6-8f03-504d58980582",
+					"id": "0d25aff1-0713-4d1b-a05a-78add28cc532",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -792,7 +788,7 @@
 					},
 					"response": [
 						{
-							"id": "b235f3c2-1caa-47e8-a130-64b6c5fa1b85",
+							"id": "9b429071-2fa9-43cb-a092-48b539d1edf5",
 							"name": "See basic info about all users",
 							"originalRequest": {
 								"method": "GET",
@@ -817,6 +813,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -830,7 +827,7 @@
 				},
 				{
 					"name": "Retrieves all details for all users",
-					"id": "de3c0643-d824-46aa-9fbc-90989f23291e",
+					"id": "eadcfb5d-86ba-4ec1-b059-58da02adc409",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -857,7 +854,7 @@
 					},
 					"response": [
 						{
-							"id": "eef94062-f83f-4c56-92b6-105213d0ace1",
+							"id": "80b624b4-d89c-471b-9e9b-bf1916a54a21",
 							"name": "See all details of the users",
 							"originalRequest": {
 								"method": "GET",
@@ -883,6 +880,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -896,7 +894,7 @@
 				},
 				{
 					"name": "Register new user",
-					"id": "5c3d9f1f-faa3-4692-bc90-5a337fa459a9",
+					"id": "dbb2cc70-f600-426c-9d3e-a1c5ddaf4f23",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -936,7 +934,7 @@
 					},
 					"response": [
 						{
-							"id": "7dc45d14-35b5-4e00-9364-6cd03546c38a",
+							"id": "b5d375fa-6401-4461-922d-1222fe8502c1",
 							"name": "Sucessfully created user",
 							"originalRequest": {
 								"method": "POST",
@@ -975,6 +973,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -985,7 +984,7 @@
 							"body": "{\n  \"message\": \"occaecat Ut velit \",\n  \"status\": \"success\"\n}"
 						},
 						{
-							"id": "16957f53-9a04-4c4c-875c-cde79d441f89",
+							"id": "4a7bcd88-7b47-4531-9482-53620a635f1d",
 							"name": "Invalid request",
 							"originalRequest": {
 								"method": "POST",
@@ -1024,6 +1023,7 @@
 							"status": "Bad Request",
 							"code": 400,
 							"_postman_previewlanguage": "text",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1037,7 +1037,7 @@
 				},
 				{
 					"name": "Login to VAmPI",
-					"id": "a78eee24-d543-4b35-a813-01b341d6b16a",
+					"id": "64ed0635-893b-4b58-b37b-3bce2399926a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1077,7 +1077,7 @@
 					},
 					"response": [
 						{
-							"id": "9701bf9e-319e-4fdc-8345-875ef4fc8ec2",
+							"id": "29daf979-33e1-4a01-8d85-d212b79e2545",
 							"name": "Sucessfully logged in user",
 							"originalRequest": {
 								"method": "POST",
@@ -1116,6 +1116,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1126,7 +1127,7 @@
 							"body": "{\n  \"auth_token\": \"laborum dolore ipsum labore\",\n  \"message\": \"non\",\n  \"status\": \"success\"\n}"
 						},
 						{
-							"id": "21165a3e-0a15-4e78-b815-32190747df39",
+							"id": "c162f917-f496-4071-8d4f-2bb1d96b2abf",
 							"name": "Invalid request",
 							"originalRequest": {
 								"method": "POST",
@@ -1165,6 +1166,7 @@
 							"status": "Bad Request",
 							"code": 400,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1177,14 +1179,14 @@
 					]
 				}
 			],
-			"id": "42f1f196-3e05-48d8-8833-bd15b371f30d"
+			"id": "4090fe88-c973-4ca2-aa41-9f8ca07c88ac"
 		},
 		{
 			"name": "books/v1",
 			"item": [
 				{
 					"name": "Retrieves all books",
-					"id": "12243748-189a-43ff-94ca-c0e85ff0cf68",
+					"id": "83c01bcc-9714-4287-8ab9-461268eea58c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1210,7 +1212,7 @@
 					},
 					"response": [
 						{
-							"id": "3258f3fa-9cfe-4dfc-9f8b-17e35072bea4",
+							"id": "59c3c0c2-eabb-48d1-86b6-7b618dddb36e",
 							"name": "See all books",
 							"originalRequest": {
 								"method": "GET",
@@ -1235,6 +1237,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1248,7 +1251,7 @@
 				},
 				{
 					"name": "Add new book",
-					"id": "37327b4a-4b97-4d37-a34c-f0a9690d09ed",
+					"id": "26e09dd5-f00d-4bef-93e4-0d973bec196f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1287,7 +1290,7 @@
 					},
 					"response": [
 						{
-							"id": "d61108f8-b815-4f65-bd71-0fe865b26a95",
+							"id": "70122fc2-38e3-4c81-9a84-33cfd9158a58",
 							"name": "Sucessfully added a book",
 							"originalRequest": {
 								"method": "POST",
@@ -1325,6 +1328,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1335,7 +1339,7 @@
 							"body": "{\n  \"message\": \"occaecat Ut velit \",\n  \"status\": \"success\"\n}"
 						},
 						{
-							"id": "1f07a393-4fa0-4a8d-8a98-545f4b83195e",
+							"id": "a5d75182-f5c1-4013-9fd8-a8d61ec3e521",
 							"name": "Invalid request",
 							"originalRequest": {
 								"method": "POST",
@@ -1373,6 +1377,7 @@
 							"status": "Bad Request",
 							"code": 400,
 							"_postman_previewlanguage": "text",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1383,7 +1388,7 @@
 							"body": ""
 						},
 						{
-							"id": "71ca0763-ad60-4d91-aefc-1e5a2abfe365",
+							"id": "c4c18f6c-5955-4060-ae19-1e58f846863d",
 							"name": "User not authorized",
 							"originalRequest": {
 								"method": "POST",
@@ -1421,6 +1426,7 @@
 							"status": "Unauthorized",
 							"code": 401,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1434,7 +1440,7 @@
 				},
 				{
 					"name": "Retrieves book by title along with secret",
-					"id": "7bb11253-1f62-4791-9fdb-fcf1b3e9bd39",
+					"id": "659afd4a-e52b-48e1-8491-b9399b26ff82",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1458,7 +1464,6 @@
 							],
 							"variable": [
 								{
-									"id": "338fa5c5-a8e1-48ce-a66d-a3efe910080b",
 									"key": "book_title",
 									"value": "<string>",
 									"description": "(Required) retrieve book data"
@@ -1469,7 +1474,7 @@
 					},
 					"response": [
 						{
-							"id": "2002a2ee-9e2c-4298-9132-6157f9eb84ac",
+							"id": "6e8a83aa-6f7a-4135-baa6-88b161cdca34",
 							"name": "Successfully retrieve book info",
 							"originalRequest": {
 								"method": "GET",
@@ -1491,7 +1496,6 @@
 									],
 									"variable": [
 										{
-											"id": "338fa5c5-a8e1-48ce-a66d-a3efe910080b",
 											"key": "book_title",
 											"value": "<string>",
 											"description": "(Required) retrieve book data"
@@ -1503,6 +1507,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1513,7 +1518,7 @@
 							"body": "[\n  {\n    \"book_title\": \"anim \",\n    \"owner\": \"proident sint quis adipisicing\",\n    \"secret\": \"dolore amet sed\"\n  },\n  {\n    \"book_title\": \"ad in reprehenderit voluptate\",\n    \"owner\": \"elit sed esse\",\n    \"secret\": \"ad\"\n  }\n]"
 						},
 						{
-							"id": "784e5db9-fc2e-4491-8587-b16b42e509da",
+							"id": "5413ebec-5bf5-4a1a-9b80-24e444981c54",
 							"name": "User not authorized",
 							"originalRequest": {
 								"method": "GET",
@@ -1535,7 +1540,6 @@
 									],
 									"variable": [
 										{
-											"id": "338fa5c5-a8e1-48ce-a66d-a3efe910080b",
 											"key": "book_title",
 											"value": "<string>",
 											"description": "(Required) retrieve book data"
@@ -1547,6 +1551,7 @@
 							"status": "Unauthorized",
 							"code": 401,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1557,7 +1562,7 @@
 							"body": "{\n  \"status\": \"fail\",\n  \"message\": \"dolore\"\n}"
 						},
 						{
-							"id": "fad83f36-dc3f-4862-884a-6f0110a40724",
+							"id": "d8ed494c-4cd1-4e56-8dcf-5632bc7d2687",
 							"name": "Book not found",
 							"originalRequest": {
 								"method": "GET",
@@ -1579,7 +1584,6 @@
 									],
 									"variable": [
 										{
-											"id": "338fa5c5-a8e1-48ce-a66d-a3efe910080b",
 											"key": "book_title",
 											"value": "<string>",
 											"description": "(Required) retrieve book data"
@@ -1591,6 +1595,7 @@
 							"status": "Not Found",
 							"code": 404,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -1603,11 +1608,11 @@
 					]
 				}
 			],
-			"id": "57512575-e12e-4565-89e7-90a637859289"
+			"id": "455836c4-d982-4561-b3a6-b0e23269adae"
 		},
 		{
 			"name": "Creates and populates the database with dummy data",
-			"id": "9c30c7ea-561c-401c-b3f5-36ad410f9f43",
+			"id": "a2a28142-4548-4794-8616-4da4606b39ac",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1632,7 +1637,7 @@
 			},
 			"response": [
 				{
-					"id": "15f5a7bd-36aa-4d28-a2d6-337df582afea",
+					"id": "1f71a203-7aa5-4e1d-b3a8-d92cc4310977",
 					"name": "Creates and populates the database with dummy data",
 					"originalRequest": {
 						"method": "GET",
@@ -1656,6 +1661,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -1669,7 +1675,7 @@
 		},
 		{
 			"name": "VAmPI home",
-			"id": "59325384-b479-424d-b143-deee150e16d1",
+			"id": "cb367895-59bf-432f-877c-ecadc18e8f15",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1694,7 +1700,7 @@
 			},
 			"response": [
 				{
-					"id": "b002e8df-7324-40bb-8853-3f7f6ed97e35",
+					"id": "4b490da1-d739-4881-ba33-c951bbd4794f",
 					"name": "Home - Help",
 					"originalRequest": {
 						"method": "GET",
@@ -1718,6 +1724,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",

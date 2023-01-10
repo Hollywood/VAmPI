@@ -1,0 +1,12 @@
+name: Create Contract Tests using Portman CLI
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  automate-contract-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Portman OpenAPI conversion
+        run: npx -y @apideck/portman -l ${{ POSTMAN_COLLECTION_PATH }}

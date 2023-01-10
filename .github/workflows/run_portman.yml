@@ -1,8 +1,7 @@
 name: Create Contract Tests using Portman CLI
 
 on: 
-  - repository_dispatch:
-  - workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   automate-contract-tests:

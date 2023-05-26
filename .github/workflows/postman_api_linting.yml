@@ -11,19 +11,11 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install Postman CLI
         run: |
-          curl https://dl-cli.pstmn.io/download/latest/linux/ -o postman-cli.tar.gz
-          tar -zxvf postman-cli.tar.gz
-          sudo mv postman-cli /usr/bin/postman
-          rm postman-cli.tar.gz
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
       - name: Login to Postman CLI
-        env:
-          POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
-        run: postman login --with-api-key $POSTMAN_API_KEY
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
-        env:
-          GITHUB_WORKSPACE: ${{ github.workspace }}
-          GITHUB_RUN_ID: ${{ github.run_id }}
         run: |
-          postman collection run "7dfc8dad-88f1-48dc-8ac4-da4b7a077525"
-          # Run your API using Postman CLI
-          postman api lint
+          postman collection run "${{ github.workspace }}/postman/collections/VAmPI.json" -e "22824988-559f6052-ca26-4263-a1f4-d11bdc79e10c" --integration-id "141308-${{ github.run_id }}"
+          # Lint your API using Postman CLI
+          postman api lint c961f4c8-ebaa-4f43-ad8e-0708e6c5f84b --integration-id 141308

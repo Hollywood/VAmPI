@@ -16,6 +16,6 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "${{ github.workspace }}/postman/collections/VAmPI.json" -e "22824988-559f6052-ca26-4263-a1f4-d11bdc79e10c" --integration-id "141308-${{ github.run_id }}"
+          postman collection run "${{ github.workspace }}/postman/collections/VAmPI(1).json" --integration-id "145008-${{ github.run_id }}"
           # Lint your API using Postman CLI
-          postman api lint c961f4c8-ebaa-4f43-ad8e-0708e6c5f84b --integration-id 141308
+          postman api lint 83945b0b-236b-4259-af54-6111f4569695 --integration-id 145008

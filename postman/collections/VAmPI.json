@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "2bbd0283-76e4-4e93-9e10-2a6fc6c62732",
+		"_postman_id": "513b77da-eba3-401c-b8b3-2d8356d4bdf6",
 		"name": "VAmPI",
 		"description": "OpenAPI v3 specs for VAmPI",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "22824988-2bbd0283-76e4-4e93-9e10-2a6fc6c62732"
+		"_uid": "23374062-513b77da-eba3-401c-b8b3-2d8356d4bdf6"
 	},
 	"item": [
 		{
@@ -15,7 +15,7 @@
 					"item": [
 						{
 							"name": "Retrieves user by username",
-							"id": "99a8e8c2-0a1b-437b-a617-e270b5d9d4d9",
+							"id": "4295832d-ba14-4084-b77e-4cd96e1e9fba",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -49,7 +49,7 @@
 							},
 							"response": [
 								{
-									"id": "36cad5a6-428b-421e-9a03-083600d4f79e",
+									"id": "71319542-3c62-4563-9788-b982fbf6b090",
 									"name": "Successfully display user info",
 									"originalRequest": {
 										"method": "GET",
@@ -93,7 +93,7 @@
 									"body": "[\n  {\n    \"username\": \"culpa\",\n    \"email\": \"dolor culpa ullamco \"\n  },\n  {\n    \"username\": \"pariatur cupidatat incididunt\",\n    \"email\": \"pariatur fugiat veniam\"\n  }\n]"
 								},
 								{
-									"id": "6365a8cb-f357-4565-a87e-4f51529e2ee9",
+									"id": "e7dbac93-839b-42eb-8f99-38fabfcea051",
 									"name": "User not found",
 									"originalRequest": {
 										"method": "GET",
@@ -140,7 +140,7 @@
 						},
 						{
 							"name": "Deletes user by username (Only Admins)",
-							"id": "316f8903-d1ab-4e75-bead-aac2855a37c2",
+							"id": "ef315d09-7f94-42ba-a0a1-fbeba45082ff",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -174,7 +174,7 @@
 							},
 							"response": [
 								{
-									"id": "b05b2b61-c2de-472c-ac23-9cd14fec392e",
+									"id": "bdd5c680-2e9d-4fbf-a3cb-c21004f1c0ec",
 									"name": "Sucessfully deleted user",
 									"originalRequest": {
 										"method": "DELETE",
@@ -218,7 +218,7 @@
 									"body": "{\n  \"message\": \"occaecat Ut velit \",\n  \"status\": \"success\"\n}"
 								},
 								{
-									"id": "8cc59c51-e607-4327-90dd-555399f238ee",
+									"id": "a7ca61da-21b0-413a-901e-8865439532e6",
 									"name": "User not authorized",
 									"originalRequest": {
 										"method": "DELETE",
@@ -262,7 +262,7 @@
 									"body": "{\n  \"status\": \"fail\",\n  \"message\": \"dolore\"\n}"
 								},
 								{
-									"id": "acc7cec0-0770-4016-ace6-61fcc6d2372c",
+									"id": "8e491825-3b7b-4555-90e5-6b12ae79a11e",
 									"name": "User not found",
 									"originalRequest": {
 										"method": "DELETE",
@@ -309,7 +309,7 @@
 						},
 						{
 							"name": "Update users email",
-							"id": "89173043-dd93-4573-9546-a24638dcc099",
+							"id": "c0c6b80c-0aa0-4821-a0e7-d7cbe8a0faa9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -357,7 +357,7 @@
 							},
 							"response": [
 								{
-									"id": "7613a325-1465-43f2-838e-8e9d26750992",
+									"id": "035df0a9-43c8-4f48-9090-38bf249114ef",
 									"name": "Sucessfully updated user email",
 									"originalRequest": {
 										"method": "PUT",
@@ -415,7 +415,7 @@
 									"body": ""
 								},
 								{
-									"id": "97b9d727-3b7f-43e8-ac81-31974f4ef7cb",
+									"id": "ec5bab8c-b1a6-4cb7-89a3-03f426ef1cb3",
 									"name": "Invalid request",
 									"originalRequest": {
 										"method": "PUT",
@@ -473,7 +473,7 @@
 									"body": ""
 								},
 								{
-									"id": "b64c462f-4102-4a0b-b05c-2c596b2da150",
+									"id": "e6c7a109-a5f8-478b-965c-bc68e3f0253e",
 									"name": "User not authorized",
 									"originalRequest": {
 										"method": "PUT",
@@ -534,7 +534,7 @@
 						},
 						{
 							"name": "Update users password",
-							"id": "ff7817c1-5e5b-467f-9b1f-7e7c291631e7",
+							"id": "4d24eab5-6a48-4b07-a683-de1e18449396",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -582,7 +582,7 @@
 							},
 							"response": [
 								{
-									"id": "c2c486ae-7e72-49ad-8201-0ff920bb9dd3",
+									"id": "74f3ede3-6c35-403b-b441-5ae1a4a077f4",
 									"name": "Sucessfully updated users password",
 									"originalRequest": {
 										"method": "PUT",
@@ -640,7 +640,7 @@
 									"body": ""
 								},
 								{
-									"id": "b36341a7-4a69-47bb-819d-28142043b656",
+									"id": "ad0cb85e-e55c-4b2d-9053-80c9b8687130",
 									"name": "Invalid request",
 									"originalRequest": {
 										"method": "PUT",
@@ -698,7 +698,7 @@
 									"body": ""
 								},
 								{
-									"id": "d5401f71-d2cc-472c-82ef-61740606ebfd",
+									"id": "6e4d6128-27d0-4875-9755-ec3601906544",
 									"name": "User not authorized",
 									"originalRequest": {
 										"method": "PUT",
@@ -758,11 +758,11 @@
 							]
 						}
 					],
-					"id": "0ad7cbb4-5c84-4aae-b49f-c1886106650a"
+					"id": "35453264-7f87-4587-8401-80482868f66b"
 				},
 				{
 					"name": "Retrieves all users",
-					"id": "0d25aff1-0713-4d1b-a05a-78add28cc532",
+					"id": "d5d1cf8b-1640-49c8-89ca-ef04865c6113",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -788,7 +788,7 @@
 					},
 					"response": [
 						{
-							"id": "9b429071-2fa9-43cb-a092-48b539d1edf5",
+							"id": "477f3716-26f3-4c7b-9742-0cdf15008682",
 							"name": "See basic info about all users",
 							"originalRequest": {
 								"method": "GET",
@@ -827,7 +827,7 @@
 				},
 				{
 					"name": "Retrieves all details for all users",
-					"id": "eadcfb5d-86ba-4ec1-b059-58da02adc409",
+					"id": "b5b10d39-90f5-481d-9d19-0363c5ed231c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -854,7 +854,7 @@
 					},
 					"response": [
 						{
-							"id": "80b624b4-d89c-471b-9e9b-bf1916a54a21",
+							"id": "5dc4d649-77b1-4d3e-866a-2de06c9d2487",
 							"name": "See all details of the users",
 							"originalRequest": {
 								"method": "GET",
@@ -894,7 +894,7 @@
 				},
 				{
 					"name": "Register new user",
-					"id": "dbb2cc70-f600-426c-9d3e-a1c5ddaf4f23",
+					"id": "c05e0c49-75fd-411d-989f-64691e76e783",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -934,7 +934,7 @@
 					},
 					"response": [
 						{
-							"id": "b5d375fa-6401-4461-922d-1222fe8502c1",
+							"id": "1fb38267-1ee6-4fa0-b5db-4183cf40bd4e",
 							"name": "Sucessfully created user",
 							"originalRequest": {
 								"method": "POST",
@@ -984,7 +984,7 @@
 							"body": "{\n  \"message\": \"occaecat Ut velit \",\n  \"status\": \"success\"\n}"
 						},
 						{
-							"id": "4a7bcd88-7b47-4531-9482-53620a635f1d",
+							"id": "c5c071aa-3025-41f9-b6d5-f47d621f9e2f",
 							"name": "Invalid request",
 							"originalRequest": {
 								"method": "POST",
@@ -1037,7 +1037,7 @@
 				},
 				{
 					"name": "Login to VAmPI",
-					"id": "64ed0635-893b-4b58-b37b-3bce2399926a",
+					"id": "10f10c60-6319-4d52-8619-3110a1288825",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1077,7 +1077,7 @@
 					},
 					"response": [
 						{
-							"id": "29daf979-33e1-4a01-8d85-d212b79e2545",
+							"id": "d942d8ff-cead-4ec7-b892-2511a46c2b56",
 							"name": "Sucessfully logged in user",
 							"originalRequest": {
 								"method": "POST",
@@ -1127,7 +1127,7 @@
 							"body": "{\n  \"auth_token\": \"laborum dolore ipsum labore\",\n  \"message\": \"non\",\n  \"status\": \"success\"\n}"
 						},
 						{
-							"id": "c162f917-f496-4071-8d4f-2bb1d96b2abf",
+							"id": "735544c9-d521-4070-836a-4e97cd912266",
 							"name": "Invalid request",
 							"originalRequest": {
 								"method": "POST",
@@ -1179,14 +1179,14 @@
 					]
 				}
 			],
-			"id": "4090fe88-c973-4ca2-aa41-9f8ca07c88ac"
+			"id": "ab2503c8-5373-456f-87cf-5664126a1b60"
 		},
 		{
 			"name": "books/v1",
 			"item": [
 				{
 					"name": "Retrieves all books",
-					"id": "83c01bcc-9714-4287-8ab9-461268eea58c",
+					"id": "24e03bbd-b4bf-46d3-88e3-5042f91d5958",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1212,7 +1212,7 @@
 					},
 					"response": [
 						{
-							"id": "59c3c0c2-eabb-48d1-86b6-7b618dddb36e",
+							"id": "da9b5c1d-63bd-4846-b9c6-da3f67a4ab27",
 							"name": "See all books",
 							"originalRequest": {
 								"method": "GET",
@@ -1251,7 +1251,7 @@
 				},
 				{
 					"name": "Add new book",
-					"id": "26e09dd5-f00d-4bef-93e4-0d973bec196f",
+					"id": "be7b07cc-c163-489d-aa75-42ffc4584967",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1290,7 +1290,7 @@
 					},
 					"response": [
 						{
-							"id": "70122fc2-38e3-4c81-9a84-33cfd9158a58",
+							"id": "5a9eac32-7ed0-4a88-a89f-aec2d65b333b",
 							"name": "Sucessfully added a book",
 							"originalRequest": {
 								"method": "POST",
@@ -1339,7 +1339,7 @@
 							"body": "{\n  \"message\": \"occaecat Ut velit \",\n  \"status\": \"success\"\n}"
 						},
 						{
-							"id": "a5d75182-f5c1-4013-9fd8-a8d61ec3e521",
+							"id": "45a81a42-95d6-4ea2-9dc1-1641a92aa589",
 							"name": "Invalid request",
 							"originalRequest": {
 								"method": "POST",
@@ -1388,7 +1388,7 @@
 							"body": ""
 						},
 						{
-							"id": "c4c18f6c-5955-4060-ae19-1e58f846863d",
+							"id": "11a9753b-0333-4f44-bdb7-f5dccaf233c5",
 							"name": "User not authorized",
 							"originalRequest": {
 								"method": "POST",
@@ -1440,7 +1440,7 @@
 				},
 				{
 					"name": "Retrieves book by title along with secret",
-					"id": "659afd4a-e52b-48e1-8491-b9399b26ff82",
+					"id": "e6d3d593-b6b9-4018-bb4c-f8869c9d5aa5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1474,7 +1474,7 @@
 					},
 					"response": [
 						{
-							"id": "6e8a83aa-6f7a-4135-baa6-88b161cdca34",
+							"id": "b0f2449d-0609-46f0-ab43-134649104887",
 							"name": "Successfully retrieve book info",
 							"originalRequest": {
 								"method": "GET",
@@ -1518,7 +1518,7 @@
 							"body": "[\n  {\n    \"book_title\": \"anim \",\n    \"owner\": \"proident sint quis adipisicing\",\n    \"secret\": \"dolore amet sed\"\n  },\n  {\n    \"book_title\": \"ad in reprehenderit voluptate\",\n    \"owner\": \"elit sed esse\",\n    \"secret\": \"ad\"\n  }\n]"
 						},
 						{
-							"id": "5413ebec-5bf5-4a1a-9b80-24e444981c54",
+							"id": "8f56da20-5451-4df1-adc4-ab23581866a7",
 							"name": "User not authorized",
 							"originalRequest": {
 								"method": "GET",
@@ -1562,7 +1562,7 @@
 							"body": "{\n  \"status\": \"fail\",\n  \"message\": \"dolore\"\n}"
 						},
 						{
-							"id": "d8ed494c-4cd1-4e56-8dcf-5632bc7d2687",
+							"id": "c1123cce-4622-422f-ab61-d16590ffbc62",
 							"name": "Book not found",
 							"originalRequest": {
 								"method": "GET",
@@ -1608,11 +1608,11 @@
 					]
 				}
 			],
-			"id": "455836c4-d982-4561-b3a6-b0e23269adae"
+			"id": "55b37c90-5f47-43d6-a40d-3b5a9c1a206f"
 		},
 		{
 			"name": "Creates and populates the database with dummy data",
-			"id": "a2a28142-4548-4794-8616-4da4606b39ac",
+			"id": "c9d85151-64db-48f4-9e95-62273424d750",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1637,7 +1637,7 @@
 			},
 			"response": [
 				{
-					"id": "1f71a203-7aa5-4e1d-b3a8-d92cc4310977",
+					"id": "be590506-e074-486d-8b5c-bc4ad4b06a36",
 					"name": "Creates and populates the database with dummy data",
 					"originalRequest": {
 						"method": "GET",
@@ -1675,7 +1675,7 @@
 		},
 		{
 			"name": "VAmPI home",
-			"id": "cb367895-59bf-432f-877c-ecadc18e8f15",
+			"id": "3c792430-e6f8-4cab-a186-ecb217020cab",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1700,7 +1700,7 @@
 			},
 			"response": [
 				{
-					"id": "4b490da1-d739-4881-ba33-c951bbd4794f",
+					"id": "23dbde64-4f1a-49b9-8c73-6aa1fe8f1627",
 					"name": "Home - Help",
 					"originalRequest": {
 						"method": "GET",

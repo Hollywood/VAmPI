@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "2bbd0283-76e4-4e93-9e10-2a6fc6c62732",
 		"name": "VAmPI",
-		"description": "OpenAPI v3 specs for VAmPI",
+		"description": "OpenAPI v3 specs for VAmPI Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "22824988-2bbd0283-76e4-4e93-9e10-2a6fc6c62732"
 	},

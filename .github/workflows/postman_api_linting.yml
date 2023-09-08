@@ -18,4 +18,4 @@ jobs:
         run: |
           postman collection run "${{ github.workspace }}/postman/collections/VAmPI(1).json" --integration-id "145008-${{ github.run_id }}"
           # Lint your API using Postman CLI
-          postman api lint 83945b0b-236b-4259-af54-6111f4569695 --integration-id 145008
+          postman api lint "${{ github.workspace }}/postman/schemas/index.yaml" --integration-id 145008

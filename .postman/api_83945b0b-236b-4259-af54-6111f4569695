@@ -15,8 +15,8 @@ files[] = {"id":"22824988-2bbd0283-76e4-4e93-9e10-2a6fc6c62732","path":"VAmPI.js
 
 [config.relations.apiDefinition]
 rootDirectory = postman/schemas
-files[] = {"path":"index.yaml","metaData":{}}
+files[] = {"path":"openapi3.yml","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
 type = openapi:3
-rootFiles[] = index.yaml
+rootFiles[] = openapi3.yml

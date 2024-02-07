@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: VAmPI
-  description: OpenAPI v3 specs for VAmPI v2
+  description: OpenAPI v3 specs for VAmPI v3
   version: '2.1'
 servers:
   - url: https://5b5473f5-ebf8-463c-bbba-bb8b763db1c1.mock.pstmn.io

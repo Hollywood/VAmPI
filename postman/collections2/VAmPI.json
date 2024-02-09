@@ -1246,6 +1246,40 @@
 									],
 									"cookie": [],
 									"body": "[\n  {\n    \"email\": \"<string>\",\n    \"username\": \"<string>\"\n  },\n  {\n    \"email\": \"<string>\",\n    \"username\": \"<string>\"\n  }\n]"
+								},
+								{
+									"id": "d694aec6-57ae-4c41-b595-b875c89fc80c",
+									"name": "See basic info about all users",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/v1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												"v1"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"email\": \"<string>\",\n    \"username\": \"<string>\"\n  },\n  {\n    \"email\": \"<string>\",\n    \"username\": \"<string>\"\n  }\n]"
 								}
 							]
 						}
@@ -1674,7 +1708,8 @@
 		{
 			"id": "211eda40-d78c-4f0c-991f-fb01622280d9",
 			"key": "baseUrl",
-			"value": "https://5b5473f5-ebf8-463c-bbba-bb8b763db1c1.mock.pstmn.io"
+			"value": "https://5b5473f5-ebf8-463c-bbba-bb8b763db1c1.mock.pstmn.io",
+			"type": "any"
 		}
 	]
 }

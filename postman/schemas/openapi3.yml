@@ -68,6 +68,19 @@ paths:
                       type: string
                     username:
                       type: string
+        '401':
+          description: See basic info about all users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                    username:
+                      type: string
   /users/v1/_debug:
     get:
       tags:

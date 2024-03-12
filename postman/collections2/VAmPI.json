@@ -94,6 +94,27 @@
 			"item": [
 				{
 					"name": "VAmPI home",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f04b4027-46c3-4852-9bbf-5903247807fa",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");",
+									"});",
+									"pm.test(\"Your test name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.value).to.eql(100);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "325f3f34-beb6-4182-a74e-ede4ead02ca8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true

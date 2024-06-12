@@ -1,0 +1,1828 @@
+{
+	"info": {
+		"_postman_id": "80a566c7-e345-4f6c-aa7b-1dd312af7ee0",
+		"name": "VAmPI",
+		"description": "OpenAPI v3 specs for VAmPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "23374062-80a566c7-e345-4f6c-aa7b-1dd312af7ee0"
+	},
+	"item": [
+		{
+			"name": "createdb",
+			"item": [
+				{
+					"name": "Creates and populates the database with dummy data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b85be8a4-34fc-426a-a166-607eb3377079",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Your test name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.value).to.eql(100);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "dbf41362-9151-4499-b3a5-429e0b31b682",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/createdb",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"createdb"
+							]
+						},
+						"description": "Creates and populates the database with dummy data"
+					},
+					"response": [
+						{
+							"id": "41afde86-c392-4d2c-9e3b-caca7b7fe344",
+							"name": "Creates and populates the database with dummy data",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/createdb",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"createdb"
+									]
+								},
+								"description": "Creates and populates the database with dummy data"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"enabled": true
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"message\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "0dbc9be3-ce6b-484e-8885-b6d07679ba59"
+		},
+		{
+			"name": "/",
+			"item": [
+				{
+					"name": "VAmPI home",
+					"id": "b5bc112f-4225-4e70-affb-793d9ad9c42d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								""
+							]
+						},
+						"description": "VAmPI is a vulnerable on purpose API. It was created in order to evaluate the efficiency of third party tools in identifying vulnerabilities in APIs but it can also be used in learning/teaching purposes."
+					},
+					"response": [
+						{
+							"id": "78b30191-3908-482a-bce6-f008f85ba146",
+							"name": "Home - Help",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										""
+									]
+								},
+								"description": "VAmPI is a vulnerable on purpose API. It was created in order to evaluate the efficiency of third party tools in identifying vulnerabilities in APIs but it can also be used in learning/teaching purposes."
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"enabled": true
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"message\": \"<string>\",\n  \"Help\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "72b850c6-d159-4e0e-87d8-9d0ca6675e4a"
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "_debug",
+							"item": [
+								{
+									"name": "Retrieves all details for all users",
+									"id": "af27082c-6a6e-4977-868e-17a91318af71",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/v1/_debug",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												"v1",
+												"_debug"
+											]
+										},
+										"description": "Displays all details for all users"
+									},
+									"response": [
+										{
+											"id": "8060f1ee-536c-420f-9dd3-74de1b8e462b",
+											"name": "See all details of the users",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/_debug",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														"_debug"
+													]
+												},
+												"description": "Displays all details for all users"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"admin\": \"<boolean>\",\n    \"email\": \"<string>\",\n    \"password\": \"<string>\",\n    \"username\": \"<string>\"\n  },\n  {\n    \"admin\": \"<boolean>\",\n    \"email\": \"<string>\",\n    \"password\": \"<string>\",\n    \"username\": \"<string>\"\n  }\n]"
+										}
+									]
+								}
+							],
+							"id": "6aa113d8-182e-4f01-a8b5-e21f293e6fc5"
+						},
+						{
+							"name": "register",
+							"item": [
+								{
+									"name": "Register new user",
+									"id": "c883f61a-2fbd-4147-adcb-b8585152f836",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/users/v1/register",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												"v1",
+												"register"
+											]
+										},
+										"description": "Register new user"
+									},
+									"response": [
+										{
+											"id": "11cd6f81-c9b5-4e73-bd4c-4c7c66d05bfe",
+											"name": "Sucessfully created user",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/register",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														"register"
+													]
+												},
+												"description": "Register new user"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"message\": \"<string>\",\n  \"status\": \"fail\"\n}"
+										},
+										{
+											"id": "b36a507b-137f-494f-ba8b-b903065f1af2",
+											"name": "Invalid request",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/register",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														"register"
+													]
+												},
+												"description": "Register new user"
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": null
+										}
+									]
+								}
+							],
+							"id": "b45bf47f-abb9-4b5d-b1eb-99e07ed54976"
+						},
+						{
+							"name": "login",
+							"item": [
+								{
+									"name": "Login to VAmPI",
+									"id": "debb768c-a980-4724-8334-de1a96daae66",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/users/v1/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												"v1",
+												"login"
+											]
+										},
+										"description": "Login to VAmPI"
+									},
+									"response": [
+										{
+											"id": "0e98488f-64c3-4786-9b8c-4b916eb9c581",
+											"name": "Sucessfully logged in user",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														"login"
+													]
+												},
+												"description": "Login to VAmPI"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"auth_token\": \"<string>\",\n  \"message\": \"<string>\",\n  \"status\": \"fail\"\n}"
+										},
+										{
+											"id": "29459b37-31e2-4730-b750-c619e5f8a2fa",
+											"name": "Invalid request",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														"login"
+													]
+												},
+												"description": "Login to VAmPI"
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"status\": \"fail\",\n  \"message\": \"<string>\"\n}"
+										}
+									]
+								}
+							],
+							"id": "4459b779-a23f-4ceb-9be7-267ba3048d32"
+						},
+						{
+							"name": "{username}",
+							"item": [
+								{
+									"name": "email",
+									"item": [
+										{
+											"name": "Update users email",
+											"id": "20235324-4f9a-4f6f-ad6d-cfcb59182b42",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"email\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/:username/email",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														":username",
+														"email"
+													],
+													"variable": [
+														{
+															"key": "username",
+															"value": "<string>",
+															"description": "(Required) username to update email"
+														}
+													]
+												},
+												"description": "Update a single users email"
+											},
+											"response": [
+												{
+													"id": "6644f3ce-2c46-4771-b388-cb12799d64d2",
+													"name": "Sucessfully updated user email",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"email\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/users/v1/:username/email",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"users",
+																"v1",
+																":username",
+																"email"
+															],
+															"variable": [
+																{
+																	"key": "username",
+																	"value": "<string>",
+																	"description": "(Required) username to update email"
+																}
+															]
+														},
+														"description": "Update a single users email"
+													},
+													"status": "No Content",
+													"code": 204,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": null
+												},
+												{
+													"id": "5cfa5724-5134-40b8-afce-e2202dea8e6a",
+													"name": "Invalid request",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"email\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/users/v1/:username/email",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"users",
+																"v1",
+																":username",
+																"email"
+															],
+															"variable": [
+																{
+																	"key": "username",
+																	"value": "<string>",
+																	"description": "(Required) username to update email"
+																}
+															]
+														},
+														"description": "Update a single users email"
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": null
+												},
+												{
+													"id": "0a10627a-426b-4a6b-9df7-1cf7854e2349",
+													"name": "User not authorized",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"email\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/users/v1/:username/email",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"users",
+																"v1",
+																":username",
+																"email"
+															],
+															"variable": [
+																{
+																	"key": "username",
+																	"value": "<string>",
+																	"description": "(Required) username to update email"
+																}
+															]
+														},
+														"description": "Update a single users email"
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json",
+															"enabled": true
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"status\": \"fail\",\n  \"message\": \"<string>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "54dc60a0-d33e-431f-9520-bf9ebabab019"
+								},
+								{
+									"name": "password",
+									"item": [
+										{
+											"name": "Update users password",
+											"id": "b4c03826-491a-42ef-808d-5c36a2fd0ef2",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/:username/password",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														":username",
+														"password"
+													],
+													"variable": [
+														{
+															"key": "username",
+															"value": "<string>",
+															"description": "(Required) username to update password"
+														}
+													]
+												},
+												"description": "Update users password"
+											},
+											"response": [
+												{
+													"id": "49acee24-d5c3-4bb7-9c33-0a6f80e502d6",
+													"name": "Sucessfully updated users password",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"password\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/users/v1/:username/password",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"users",
+																"v1",
+																":username",
+																"password"
+															],
+															"variable": [
+																{
+																	"key": "username",
+																	"value": "<string>",
+																	"description": "(Required) username to update password"
+																}
+															]
+														},
+														"description": "Update users password"
+													},
+													"status": "No Content",
+													"code": 204,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": null
+												},
+												{
+													"id": "f0b8e6f5-8dcf-409a-a0f4-8bb63b682803",
+													"name": "Invalid request",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"password\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/users/v1/:username/password",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"users",
+																"v1",
+																":username",
+																"password"
+															],
+															"variable": [
+																{
+																	"key": "username",
+																	"value": "<string>",
+																	"description": "(Required) username to update password"
+																}
+															]
+														},
+														"description": "Update users password"
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": null
+												},
+												{
+													"id": "d6f55953-cc2e-40cb-8d01-d6e50a015923",
+													"name": "User not authorized",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"password\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/users/v1/:username/password",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"users",
+																"v1",
+																":username",
+																"password"
+															],
+															"variable": [
+																{
+																	"key": "username",
+																	"value": "<string>",
+																	"description": "(Required) username to update password"
+																}
+															]
+														},
+														"description": "Update users password"
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json",
+															"enabled": true
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"status\": \"fail\",\n  \"message\": \"<string>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "71143b20-0aca-4673-9586-947015f45721"
+								},
+								{
+									"name": "Retrieves user by username",
+									"id": "e85907c4-ea5d-4042-8cac-925f57eea32a",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/v1/:username",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												"v1",
+												":username"
+											],
+											"variable": [
+												{
+													"key": "username",
+													"value": "<string>",
+													"description": "(Required) retrieve username data"
+												}
+											]
+										},
+										"description": "Displays user by username"
+									},
+									"response": [
+										{
+											"id": "30e8fe65-7469-484a-a994-fd87360855ec",
+											"name": "Successfully display user info",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/:username",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														":username"
+													],
+													"variable": [
+														{
+															"key": "username",
+															"value": "<string>",
+															"description": "(Required) retrieve username data"
+														}
+													]
+												},
+												"description": "Displays user by username"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"username\": \"<string>\",\n    \"email\": \"<string>\"\n  },\n  {\n    \"username\": \"<string>\",\n    \"email\": \"<string>\"\n  }\n]"
+										},
+										{
+											"id": "53cf806d-78e4-4b84-9338-83ecc4147038",
+											"name": "User not found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/:username",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														":username"
+													],
+													"variable": [
+														{
+															"key": "username",
+															"value": "<string>",
+															"description": "(Required) retrieve username data"
+														}
+													]
+												},
+												"description": "Displays user by username"
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"status\": \"fail\",\n  \"message\": \"<string>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Deletes user by username (Only Admins)",
+									"id": "5c741050-4739-45f1-b904-51a7d7d1ad84",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/v1/:username",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												"v1",
+												":username"
+											],
+											"variable": [
+												{
+													"key": "username",
+													"value": "<string>",
+													"description": "(Required) Delete username"
+												}
+											]
+										},
+										"description": "Deletes user by username (Only Admins)"
+									},
+									"response": [
+										{
+											"id": "a6e88bd3-c622-4275-8f8d-a4d3092f7bf2",
+											"name": "Sucessfully deleted user",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/:username",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														":username"
+													],
+													"variable": [
+														{
+															"key": "username",
+															"value": "<string>",
+															"description": "(Required) Delete username"
+														}
+													]
+												},
+												"description": "Deletes user by username (Only Admins)"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"message\": \"<string>\",\n  \"status\": \"success\"\n}"
+										},
+										{
+											"id": "edf003d7-9ed7-45e5-89b6-eddb35f71e30",
+											"name": "User not authorized",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/:username",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														":username"
+													],
+													"variable": [
+														{
+															"key": "username",
+															"value": "<string>",
+															"description": "(Required) Delete username"
+														}
+													]
+												},
+												"description": "Deletes user by username (Only Admins)"
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"status\": \"fail\",\n  \"message\": \"<string>\"\n}"
+										},
+										{
+											"id": "7d14e000-e1e6-4c44-8dc4-fe9b8c214f04",
+											"name": "User not found",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/users/v1/:username",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"users",
+														"v1",
+														":username"
+													],
+													"variable": [
+														{
+															"key": "username",
+															"value": "<string>",
+															"description": "(Required) Delete username"
+														}
+													]
+												},
+												"description": "Deletes user by username (Only Admins)"
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"status\": \"fail\",\n  \"message\": \"<string>\"\n}"
+										}
+									]
+								}
+							],
+							"id": "98603ca1-dc04-4669-8f8f-56d854087955"
+						},
+						{
+							"name": "Retrieves all users",
+							"id": "0068107b-0521-452d-aab2-18fe2add641e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/v1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"v1"
+									]
+								},
+								"description": "Displays all users with basic information"
+							},
+							"response": [
+								{
+									"id": "3ecd32a2-9b87-4c27-b81b-56bcbb12e11f",
+									"name": "See basic info about all users",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/v1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												"v1"
+											]
+										},
+										"description": "Displays all users with basic information"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"enabled": true
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"email\": \"<string>\",\n    \"username\": \"<string>\"\n  },\n  {\n    \"email\": \"<string>\",\n    \"username\": \"<string>\"\n  }\n]"
+								}
+							]
+						}
+					],
+					"id": "86dcfd35-37dc-4738-b895-6cbed41791fb"
+				}
+			],
+			"id": "ca4b2aea-283d-4276-88c2-71f51e465251"
+		},
+		{
+			"name": "books",
+			"item": [
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "{book_title}",
+							"item": [
+								{
+									"name": "Retrieves book by title along with secret",
+									"id": "d0be0cb4-71bb-45db-b70c-c14f303dd0e1",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/books/v1/:book_title",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"books",
+												"v1",
+												":book_title"
+											],
+											"variable": [
+												{
+													"key": "book_title",
+													"value": "<string>",
+													"description": "(Required) retrieve book data"
+												}
+											]
+										},
+										"description": "Retrieves book by title along with secret. Only the owner may retrieve it"
+									},
+									"response": [
+										{
+											"id": "2b340217-16ef-4d5d-bb49-ae785b2875e5",
+											"name": "Successfully retrieve book info",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/books/v1/:book_title",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"books",
+														"v1",
+														":book_title"
+													],
+													"variable": [
+														{
+															"key": "book_title",
+															"value": "<string>",
+															"description": "(Required) retrieve book data"
+														}
+													]
+												},
+												"description": "Retrieves book by title along with secret. Only the owner may retrieve it"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"book_title\": \"<string>\",\n    \"owner\": \"<string>\",\n    \"secret\": \"<string>\"\n  },\n  {\n    \"book_title\": \"<string>\",\n    \"owner\": \"<string>\",\n    \"secret\": \"<string>\"\n  }\n]"
+										},
+										{
+											"id": "c5a5b204-1d19-49af-ab1f-ef1f03f30d62",
+											"name": "User not authorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/books/v1/:book_title",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"books",
+														"v1",
+														":book_title"
+													],
+													"variable": [
+														{
+															"key": "book_title",
+															"value": "<string>",
+															"description": "(Required) retrieve book data"
+														}
+													]
+												},
+												"description": "Retrieves book by title along with secret. Only the owner may retrieve it"
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"status\": \"fail\",\n  \"message\": \"<string>\"\n}"
+										},
+										{
+											"id": "6a991aaf-4ef3-4372-9108-a2ef4ff7cfc5",
+											"name": "Book not found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/books/v1/:book_title",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"books",
+														"v1",
+														":book_title"
+													],
+													"variable": [
+														{
+															"key": "book_title",
+															"value": "<string>",
+															"description": "(Required) retrieve book data"
+														}
+													]
+												},
+												"description": "Retrieves book by title along with secret. Only the owner may retrieve it"
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"status\": \"fail\",\n  \"message\": \"<string>\"\n}"
+										}
+									]
+								}
+							],
+							"id": "13628183-6365-4e59-9fad-d42d51070517"
+						},
+						{
+							"name": "Retrieves all books",
+							"id": "50922fc4-8d8a-483a-b93a-27a69a6052d9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/books/v1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"books",
+										"v1"
+									]
+								},
+								"description": "Retrieves all books"
+							},
+							"response": [
+								{
+									"id": "a0a76ace-10dd-4ca0-87ae-959d15d8f2d4",
+									"name": "See all books",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/books/v1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"books",
+												"v1"
+											]
+										},
+										"description": "Retrieves all books"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"enabled": true
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Books\": [\n    {\n      \"book_title\": \"<string>\",\n      \"user\": \"<string>\"\n    },\n    {\n      \"book_title\": \"<string>\",\n      \"user\": \"<string>\"\n    }\n  ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Add new book",
+							"id": "1e2b5006-3976-415b-b001-85df579d4eaa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"book_title\": \"<string>\",\n  \"secret\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/books/v1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"books",
+										"v1"
+									]
+								},
+								"description": "Add new book"
+							},
+							"response": [
+								{
+									"id": "d67100b8-1f06-4b4a-b774-145fdd8a1198",
+									"name": "Sucessfully added a book",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"book_title\": \"<string>\",\n  \"secret\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/books/v1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"books",
+												"v1"
+											]
+										},
+										"description": "Add new book"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"enabled": true
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"message\": \"<string>\",\n  \"status\": \"fail\"\n}"
+								},
+								{
+									"id": "2f6117ad-0297-4b69-9653-cc7a84326006",
+									"name": "Invalid request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"book_title\": \"<string>\",\n  \"secret\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/books/v1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"books",
+												"v1"
+											]
+										},
+										"description": "Add new book"
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": null
+								},
+								{
+									"id": "6a06078c-a252-4c11-b89c-45853f9546a0",
+									"name": "User not authorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"book_title\": \"<string>\",\n  \"secret\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/books/v1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"books",
+												"v1"
+											]
+										},
+										"description": "Add new book"
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"enabled": true
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"status\": \"fail\",\n  \"message\": \"<string>\"\n}"
+								}
+							]
+						}
+					],
+					"id": "a0348ef9-7610-4fba-b80c-5692e1735924"
+				}
+			],
+			"id": "959a2ed2-8663-48ce-8f76-3352370dea58"
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "{{basicAuthUsername}}",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{basicAuthPassword}}",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "e4b8304e-f1f3-490f-806d-1961174a4d95",
+			"key": "baseUrl",
+			"value": "https://5b5473f5-ebf8-463c-bbba-bb8b763db1c1.mock.pstmn.io",
+			"type": "any"
+		}
+	]
+}
